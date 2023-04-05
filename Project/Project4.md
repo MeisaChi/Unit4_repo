@@ -116,29 +116,10 @@ check_password will take 2 inputs, hashed_password and user_password, and then u
 The last code is made for testing the hashing system, because we have to see if it is securely hashed.
 
 ## Screen Shots from the app
-![](https://github.com/MeisaChi/Unit3_repo/blob/main/Project/Pics/SS_Log.png)
-**Fig.11**
-*Login Screen*
+![]()
+**Fig.**
+**
 
-![](https://github.com/MeisaChi/Unit3_repo/blob/main/Project/Pics/SS_Reg.png)
-**Fig.12**
-*Signup Screen*
-
-![](https://github.com/MeisaChi/Unit3_repo/blob/main/Project/Pics/SS_Home.png)
-**Fig.13**
-*Home Screen*
-
-![](https://github.com/MeisaChi/Unit3_repo/blob/main/Project/Pics/SS_pop.png)
-**Fig.14**
-*Pop up for when the user is logging out*
-
-![](https://github.com/MeisaChi/Unit3_repo/blob/main/Project/Pics/SS_Add.png)
-**Fig.15**
-*Adding items Screen*
-
-![](https://github.com/MeisaChi/Unit3_repo/blob/main/Project/Pics/SS_Tab.png)
-**Fig.16**
-*Table Screen*
 
 # Criteria D: Functionality
 ## Video
