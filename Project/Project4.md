@@ -1,19 +1,20 @@
-# Unit 4: 
+# Unit 4 project: Cafe sharing social network
 
-![]()
-*Citation of picture
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Screenshots/thumbnail.jpeg)
+*“パステルカラーの外観が可愛いカフェ / ワルシャワ / ポーランドの写真素材.” 旅パレット, 4 June 2019, https://decorate-my-trip.com/poland-warsaw-shabby-chic/. Accessed 13 April 2023.*
 
 
 ## Criteria A: Planning
 
 ## Problem definition
-**Client:** 
+**Client:** Myself
 
-**Context:** 
+**Context:** The client, (myself) likes to travel during long term breaks, and especially enjoys going to different cafes in the travelled region. But it is always difficult to find an good cafe, as the client has to look at a lot of components to decide. The client is very picky in food, the appearence of the cafe, and also as a student, the client has to know the price of the food before going to the cafe. This process of finding a cafe usually takes a long time, as the client has to search through different websites to find a favourite, and go on to other websites to find the other menus and the prices. 
 
-**Problem:** 
+**Problem:** The client is finding difficulties to find a cafe that fits their criteria
 
 ## Proposed Solution
+
 
 ### Design Statement
 
@@ -54,6 +55,8 @@ The data of the different user information and item information will be stored i
 ## Record of Tasks
 | Task No | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
 |-|-|-|-|-|-|
+| 1 | Find a thumbnail picture | A thumbnail picture that shows up at the top of my github documentation | 5mins | Apr 13 | A |
+| 2 | Write my problem definition | A problem definition on my github documentation | 20mins | Apr 13 | A |
 
 # Criteria C: Development
 ## Existing tools
