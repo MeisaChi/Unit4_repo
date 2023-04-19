@@ -31,14 +31,15 @@ The advantage of using SQLite is that it is very simple and easy to use. SQLite 
 ### CSS
 CSS can be written with simple codes, which means that the number of lines needed for coding the UI design is less. This will allow the program to run faster than when they have more lines of code[^4]. As well as it being light and fast, CSS allows the program to apply a single style sheet on all the assigned pages[^4], which means that all the pages in the website will look united, and this project includes making several pages. Another advantage in using CSS is that it has a user-friendly design, with logical buttons and labels[^4] which enrich the user experience when accessing the website.
 
-### html
-
+### HTML
+HTML is an open-source program, which can be implemented free of cost[^5], which matches the client's budgetary restricitions. As well CSS, HTML is simple and light in weight[^5]. HTML can also be flexible to adapt on different platforms[^5], which also helps the client as they are a student which means that they might use their phone or computer. Another advantage is that HTML is easy to be used with other programming languages[^5], which in this case, as it uses other language such as Python and CSS, using HTML will allow the program to be simple and open for development.
 
 
 [^1]: “Top 10 Reasons Why Python is So Popular With Developers in 2023.” upGrad, 29 September 2022, https://www.upgrad.com/blog/reasons-why-python-popular-with-developers/. Accessed 1 March 2023.
 [^2]: “Appropriate Uses For SQLite.” SQLite, 16 December 2022, https://www.sqlite.org/whentouse.html. Accessed 1 March 2023.
 [^3]: “What is SQLite? Top SQLite Features You Should Know.” SQLite Tutorial, https://www.sqlitetutorial.net/what-is-sqlite/. Accessed 1 March 2023.
 [^4]: “What Is CSS and Why Should You Use It?” Devmountain, https://devmountain.com/blog/what-is-css-and-why-use-it/. Accessed 19 April 2023.
+[^5]: Goyal, Yashi. “Advantages of HTML | Top 10 Amazing Advantages of HTML.” eduCBA, https://www.educba.com/advantages-of-html/. Accessed 19 April 2023.
 
 
 ## Success criteria
@@ -75,6 +76,7 @@ The data of the different user information and item information will be stored i
 | 6 | Wite a design statement | A design statement on my github documentation | 15mins | Apr 19 | A |
 | 7 | Create a success criteria | A finished criteria on my github documentation | 10mins | Apr 19 | A |
 | 8 | Wite a justification for CSS | A justification for CSS on my github documentation | 15mins | Apr 19 | A |
+| 8 | Wite a justification for HTML | A justification for HTML on my github documentation | 15mins | Apr 19 | A |
 
 # Criteria C: Development
 ## Existing tools
