@@ -29,6 +29,7 @@ One of the reason I chose Python is because it is one of the fastest-growing lan
 The advantage of using SQLite is that it is very simple and easy to use. SQLite is easy to install and use, and it becomes a single file when saved[^2]. It is also accessible in different devices from home devices (phones) to professional devices (airplanes). SQLite does not need administration, and also does not need a server to run. This means it requires minimal support from the operating system or external library[^3]. As well as KivyMD, this makes SQLite flexible and usable in any device. And in SQLite, a value can be stored in any value in any column, regardless of the data type[^3]. This becomes very important in our App, because we are creating different attributes that the user can input and they are in different values (strings and integers).
 
 ### CSS
+CSS can be written with simple codes, which means that the number of lines needed for coding the UI design is less. This will allow the program to run faster than when they have more lines of code[^4]. As well as it being light and fast, CSS allows the program to apply a single style sheet on all the assigned pages[^4], which means that all the pages in the website will look united, and this project includes making several pages. Another advantage in using CSS is that it has a user-friendly design, with logical buttons and labels[^4] which enrich the user experience when accessing the website.
 
 ### html
 
@@ -37,6 +38,7 @@ The advantage of using SQLite is that it is very simple and easy to use. SQLite 
 [^1]: “Top 10 Reasons Why Python is So Popular With Developers in 2023.” upGrad, 29 September 2022, https://www.upgrad.com/blog/reasons-why-python-popular-with-developers/. Accessed 1 March 2023.
 [^2]: “Appropriate Uses For SQLite.” SQLite, 16 December 2022, https://www.sqlite.org/whentouse.html. Accessed 1 March 2023.
 [^3]: “What is SQLite? Top SQLite Features You Should Know.” SQLite Tutorial, https://www.sqlitetutorial.net/what-is-sqlite/. Accessed 1 March 2023.
+[^4]: “What Is CSS and Why Should You Use It?” Devmountain, https://devmountain.com/blog/what-is-css-and-why-use-it/. Accessed 19 April 2023.
 
 
 ## Success criteria
@@ -72,6 +74,7 @@ The data of the different user information and item information will be stored i
 | 5 | Propose a solution | A proposed solution on github documentation | 15mins | Apr 19 | A |
 | 6 | Wite a design statement | A design statement on my github documentation | 15mins | Apr 19 | A |
 | 7 | Create a success criteria | A finished criteria on my github documentation | 10mins | Apr 19 | A |
+| 8 | Wite a justification for CSS | A justification for CSS on my github documentation | 15mins | Apr 19 | A |
 
 # Criteria C: Development
 ## Existing tools
