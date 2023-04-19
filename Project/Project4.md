@@ -23,15 +23,21 @@ I will design a social media using Pycharm, which will be a website, by using la
 ## Justification
 
 ### Python
+One of the reason I chose Python is because it is one of the fastest-growing languages in the world, as it is considered as one of the best programming languages for machine learning[^1]. Python runs very fast. As it is very easy to learn and simple, it would be easy for the client to use, without any complex systems, and also with it's simplicity it will be open for any further developers to improve my software. Another key points about Python is that as it is deeply supported by different communities[^1], it has many different accessible libraries, which makes it really flexible. The flexibilities of possibilities in Python allows us developers to easily find and add different functions in our app. This solution includes functions in different fields such as an App, different screens, databases, and tables. These different functions are all available in Python, therefore I chose to provide a program using Python as a solution.
+
+### SQLite
+The advantage of using SQLite is that it is very simple and easy to use. SQLite is easy to install and use, and it becomes a single file when saved[^2]. It is also accessible in different devices from home devices (phones) to professional devices (airplanes). SQLite does not need administration, and also does not need a server to run. This means it requires minimal support from the operating system or external library[^3]. As well as KivyMD, this makes SQLite flexible and usable in any device. And in SQLite, a value can be stored in any value in any column, regardless of the data type[^3]. This becomes very important in our App, because we are creating different attributes that the user can input and they are in different values (strings and integers).
 
 ### CSS
 
 ### html
 
-### SQLite
 
-[^1]:
-[^2]: 
+
+[^1]: “Top 10 Reasons Why Python is So Popular With Developers in 2023.” upGrad, 29 September 2022, https://www.upgrad.com/blog/reasons-why-python-popular-with-developers/. Accessed 1 March 2023.
+[^2]: “Appropriate Uses For SQLite.” SQLite, 16 December 2022, https://www.sqlite.org/whentouse.html. Accessed 1 March 2023.
+[^3]: “What is SQLite? Top SQLite Features You Should Know.” SQLite Tutorial, https://www.sqlitetutorial.net/what-is-sqlite/. Accessed 1 March 2023.
+
 
 ## Success criteria
 1. The user can login or create an account and the account data will be securely stored
@@ -61,6 +67,11 @@ The data of the different user information and item information will be stored i
 |-|-|-|-|-|-|
 | 1 | Find a thumbnail picture | A thumbnail picture that shows up at the top of my github documentation | 5mins | Apr 13 | A |
 | 2 | Write my problem definition | A problem definition on my github documentation | 20mins | Apr 13 | A |
+| 3 | Wite a justification for python | A justification for python on my github documentation | 5mins | Apr 19 | A |
+| 4 | Wite a justification for SQLite | A justification for SQLite on my github documentation | 5mins | Apr 19 | A |
+| 5 | Propose a solution | A proposed solution on github documentation | 15mins | Apr 19 | A |
+| 6 | Wite a design statement | A design statement on my github documentation | 15mins | Apr 19 | A |
+| 7 | Create a success criteria | A finished criteria on my github documentation | 10mins | Apr 19 | A |
 
 # Criteria C: Development
 ## Existing tools
@@ -94,7 +105,7 @@ class database_worker:
     def close(self):
         self.connection.close()**
 ```
-This is the python code that actually connects the database into the python file. 
+As the users need their information and post information has to be stored in an another database, this is the code which connects the data to the python problem.
 
 Connection and cursor allows us to directly connect to the database, search is used for finding and bringing data from the database, save is for adding and uploading any data into the database, and close is for ending the connection between the python file and the database.
 
@@ -114,7 +125,9 @@ def check_password(hashed_password, user_password):
 hash = encrypt_password("password123")
 print(hash)
 ```
-This is on another file, secure_password.py. first, it starts with importing sha256_crypt from passlib.hash which is the library that allows the user to use a hashing system. hasher will be the value for the password that is hashed. 
+The client also needs the password to be securely stored, for their account to not get stolen. This block of code, allows the program to save in to the database a user's password hashed, and unhash the password when the password has to be matched. 
+
+The code starts with importing sha256_crypt from passlib.hash which is the library that allows the user to use a hashing system. hasher will be the value for the password that is hashed. 
 
 encrypt_password will take an input value 'user_password', and it will return hasher.hash which means that it will return a hashed password.
 
