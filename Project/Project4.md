@@ -9,14 +9,16 @@
 ## Problem definition
 **Client:** Myself
 
-**Context:** The client, (myself) likes to travel during long term breaks, and especially enjoys going to different cafes in the travelled region. But it is always difficult to find an good cafe, as the client has to look at a lot of components to decide. The client is very picky in food, the appearence of the cafe, and also as a student, the client has to know the price of the food before going to the cafe. This process of finding a cafe usually takes a long time, as the client has to search through different websites to find a favourite, and go on to other websites to find the other menus and the prices. 
+**Context:** The client, a student studying in a high schools likes to travel during long term breaks, and especially enjoys going to different cafes in the travelled region. But it is always difficult to find an good cafe, as the client has to look at a lot of components to decide. The client is very picky in food, the appearence of the cafe, and also as a student, the client has to know the price of the food before going to the cafe. This process of finding a cafe usually takes a long time, as the client has to search through different websites to find a favourite, and go on to other websites to find the other menus and the prices. 
 
-**Problem:** The client is finding difficulties to find a cafe that fits their criteria
+**Problem:** The client is a student with limited budget, finding difficulties to find a cafe that fits their criteria
 
 ## Proposed Solution
 
+Considering the client's budget limitations and the context of the problem, the solution that I propose for the client is using Python, CSS and html to create a Social Media.
 
 ### Design Statement
+I will design a social media using Pycharm, which will be a website, by using languages, Python to code the different pages in the website, html to create the components on the pages, and CSS to make the design of the pages nice, and SQLite to keep data inputs by the users. To solve the problem, the website will allow the client to login and create accounts, make a post on a cafe that includes the name, context and location, find an specific account and look at their posts. When an account is created, their username, password (securely stored by hashing) and email will be recorded in a database. 
 
 ## Justification
 
@@ -26,16 +28,18 @@
 
 ### html
 
+### SQLite
+
 [^1]:
 [^2]: 
 
 ## Success criteria
-1. Success Criteria
-2. Success Criteria
-3. Success Criteria
-4. Success Criteria
-5. Success Criteria
-6. Success Criteria
+1. The user can login or create an account and the account data will be securely stored
+2. The user can switch between different pages
+3. The user can make a post, which will include a title (name of the cafe), context and location
+4. The user can look at other people's posts
+5. The user can bookmark posts, which will be saved in their bookmarks folder
+6. The user can log out from the website, which will restrict the accessibility to the website
 
 # Criteria B: Design
 
