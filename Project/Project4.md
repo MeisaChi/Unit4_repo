@@ -8,7 +8,7 @@
 
 ## Problem definition
 
-**Context:** The client, a student studying in a high schools likes to travel during long term breaks, and especially enjoys going to different cafes in the travelled region. But it is always difficult to find an good cafe, as the client has to look at a lot of components to decide. The client is very picky in food, the appearence of the cafe, and also as a student, the client has to know the price of the food before going to the cafe. This process of finding a cafe usually takes a long time, as the client has to search through different websites to find a favourite, and go on to other websites to find the other menus and the prices. 
+**Context:** The client, a student studying in a high schools likes to travel during long term breaks, and especially enjoys going to different cafes in the travelled region. But it is always difficult to find an good cafe, as the client has to look at a lot of components to decide. The client is very picky in food, the appearence of the cafe, and also as a student, the client has to know the price of the food before going to the cafe. This process of finding a cafe usually takes a long time, as the client has to search through different websites to find a favourite, and go on to other websites to find the other menus and the prices. Therefore, the client is craving for a SNS platform where they can create an account, login and post informations about different cafes, and also save any posts of cafe that they are interested in. 
 
 **Problem:** The client is a student with limited budget, finding difficulties to find a cafe that fits their criteria
 
@@ -47,7 +47,7 @@ HTML is an open-source program, which can be implemented free of cost[^5], which
 3. The user can make a post, which will include a title (name of the cafe), context and location
 4. The user can look at other people's posts
 5. The user can bookmark posts, which will be saved in their bookmarks folder
-6. The user can log out from the website, which will restrict the accessibility to the website
+6. The user is able to find a price range of any cafes that are posted on the social media
 
 # Criteria B: Design
 
