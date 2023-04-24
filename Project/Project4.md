@@ -78,6 +78,8 @@ The data of the different user information and item information will be stored i
 | 9 | Wite a justification for HTML | A justification for HTML on my github documentation | 15mins | Apr 19 | A |
 | 10 | Import from unit 3 and add explanations for Database worker | A explanation for Database worker on my github documentation | 5mins | Apr 24 | C |
 | 11 | Import from unit 3 and add explanations for Hashing the password | A explanation for Hashing the password on my github documentation | 5mins | Apr 24 | C |
+| 12 | Create a wireframe diagram | Wireframe diagram on my github documentation | 30mins | Apr 24 | B |
+| 13 | Code | Coding progress on my website | 3hrs | Apr 25 | C |
 
 # Criteria C: Development
 ## Existing tools
