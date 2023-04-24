@@ -76,6 +76,8 @@ The data of the different user information and item information will be stored i
 | 7 | Create a success criteria | A finished criteria on my github documentation | 10mins | Apr 19 | A |
 | 8 | Wite a justification for CSS | A justification for CSS on my github documentation | 15mins | Apr 19 | A |
 | 9 | Wite a justification for HTML | A justification for HTML on my github documentation | 15mins | Apr 19 | A |
+| 10 | Import from unit 3 and add explanations for Database worker | A explanation for Database worker on my github documentation | 5mins | Apr 24 | C |
+| 11 | Import from unit 3 and add explanations for Hashing the password | A explanation for Hashing the password on my github documentation | 5mins | Apr 24 | C |
 
 # Criteria C: Development
 ## Existing tools
