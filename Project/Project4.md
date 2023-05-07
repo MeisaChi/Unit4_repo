@@ -44,10 +44,10 @@ HTML is an open-source program, which can be implemented free of cost[^5], which
 ## Success criteria
 1. The user can login or create an account and the account data will be securely stored
 2. The user can switch between different pages
-3. The user can make a post, which will include a title (name of the cafe), context and location
+3. The user can make a post, which will include a title (name of the cafe), context, price range and location
 4. The user can look at other people's posts
 5. The user can bookmark posts, which will be saved in their bookmarks folder
-6. The user is able to find a price range of any cafes that are posted on the social media
+6. The user is able edit their profile, which means that they can change their email or username
 
 # Criteria B: Design
 
