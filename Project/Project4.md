@@ -80,6 +80,10 @@ The data of the different user information and item information will be stored i
 | 11 | Import from unit 3 and add explanations for Hashing the password | A explanation for Hashing the password on my github documentation | 5mins | Apr 24 | C |
 | 12 | Create a wireframe diagram | Wireframe diagram on my github documentation | 30mins | Apr 24 | B |
 | 13 | Code | Coding progress on my website | 3hrs | Apr 25 | C |
+| 14 | Code | Coding progress on my website | 2hrs | Apr 28 | C |
+| 15 | Code | Coding progress on my website | 2hrs | May 1 | C |
+| 16 | Code | Coding progress on my website | 3hrs | May 5 | C |
+| 17 | Work on Criteria C | Finalize, adjust, write descriptions for Criteria C | 2hrs | May 8 | C |
 
 # Criteria C: Development
 ## Existing tools
