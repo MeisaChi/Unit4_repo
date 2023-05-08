@@ -57,7 +57,21 @@ HTML is an open-source program, which can be implemented free of cost[^5], which
 Explanation
 
 ## Database Storage 
-The data of the different user information and item information will be stored in a SQLite database ''.  
+The data of the different user information and post information will be stored in a SQLite database 'social_net.db'.  
+### Users 
+| id | uname | email | password |
+|-|-|-|-|
+| 1 (int. primary key) | Bob. (Str) | bob@xyz.com (Str) | $5$rounds=30000$... (str) |
+### Posts 
+| id | title | content | price | location | user_id |
+|-|-|-|-|-|-|
+| 1 (int. primary key) | Cat cafe (str) | A cafe that has many different cats. Very nice (str) | 1000-2000 yen (str) | Tokyo (str) | 1 (int) |
+### Bookmarks 
+| id | title | content | price | location | user_id | cookie |
+|-|-|-|-|-|-|-|
+| 7 (int. primary key) | Boardgame Cafe (str) | There is a board game cafe, nice and simple (str) | 2000-3000 yen (str) | Karuizawa (str) | 2 (int) | 2 (int) |
+
+
 
 ## Test Plan
 | Description | Category | Input | Expected Output | Purpose | Success Criteria |
