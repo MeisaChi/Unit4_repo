@@ -52,9 +52,19 @@ HTML is an open-source program, which can be implemented free of cost[^5], which
 # Criteria B: Design
 
 ## System Diagram
-![]()
-**Fig.1** *Explanation of figure*  
-Explanation
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/SystemDiagram.png)
+**Fig.1** *System diagram for the Cafe social media.*  
+Shows the connection between the input, output and the program. The program gets an input from the user input on keyboard and the trackpad, which is transfered to the computer, then the Mac computer uses Python (includes Pycharm, CSS and HTML) to configurate the inputs. When the program runs, the GUI screen is shown on the computer screeen as an output.
+
+## Wireframe Diagram
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/wireframe.jpg)
+**Fig.2** *Wireframe diagram for the Cafe social media.*  
+Shows all the screens and the connections between the different screen, which is basically which button leads to which screen.
+
+## ER Diagram
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/ER.jpg)
+**Fig.3** *ER diagram for the database in the Cafe social media*  
+The ER diagram shows the different tables 'users', 'posts' and 'bookmarks', as well as it's different properties within the database 'social_net.db', and it's connection to each other.
 
 ## Database Storage 
 The data of the different user information and post information will be stored in a SQLite database 'social_net.db'.  
