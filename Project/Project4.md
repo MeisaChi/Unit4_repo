@@ -90,14 +90,18 @@ The data of the different user information and item information will be stored i
 
 ## Python Code
 
-### Imports
+## Imports
 
 ```.py
+from flask import Flask, render_template, request, redirect, url_for, make_response
+from my_lib import database_worker, encrypt_password, check_password
 ```
-This is the items that are imported into the python file.
+This is the items that are imported into the python file. Flask is the import that helps import other libraries that becomes helpful when connecting html to Python, and they make the current and the further development easier. 
+
+My_lib is a library that I have created, which includes the database worker and the functions for hashing and unhashing the password. Usability of these codes are introduced below.
 
 
-### Database worker
+## Database worker
 ```.py
 **#database worker
 class database_worker:
@@ -121,7 +125,7 @@ As the users need their information and post information has to be stored in an 
 
 Connection and cursor allows us to directly connect to the database, search is used for finding and bringing data from the database, save is for adding and uploading any data into the database, and close is for ending the connection between the python file and the database.
 
-### Hashing the password
+## Hashing the password
 ```.py
 from passlib.hash import sha256_crypt
 
@@ -146,6 +150,125 @@ encrypt_password will take an input value 'user_password', and it will return ha
 check_password will take 2 inputs, hashed_password and user_password, and then using verify from the library, it will compared the hashed password and the user password (the user input and the password in the database)
 
 The last code is made for testing the hashing system, because we have to see if it is securely hashed.
+
+## Running the app
+```.py
+# at the start of the program
+app = Flask(__name__)
+
+# at the end of the program
+if __name__ == '__main__':
+    app.run()
+```
+This is the code that is used to create and run the app. This is significant for the program, because withought this, there wouldn't be any app.
+
+## Preparing the database
+```.py
+def create_database():
+    db = database_worker("social_net.db")
+    query_user = """CREATE table if not exists users (
+        id INTEGER PRIMARY KEY,
+        uname TEXT,
+        email TEXT,
+        password TEXT
+    )
+    """
+    query_post = """CREATE table if not exists posts (
+        id INTEGER PRIMARY KEY,
+        title VARCHAR(100),
+        content TEXT,
+        price TEXT,
+        location TEXT,
+        user_id INTEGER, 
+        FOREIGN KEY (user_id) REFERENCES users(id) on delete cascade
+    )
+    """
+
+    db.run_save(query_user)
+    db.run_save(query_post)
+    db.close()
+```
+Using this create database code, the different tables are created (for users, posts and bookmarks) and saved into the database "social_net.db", which is an SQLite database file. These tables are significant for this program, as all the user inputs will be saved in here. 
+
+## The original page
+```.py
+@app.route('/')
+@app.route('/index')
+def index():  # put application's code here
+    return redirect('login')
+```
+App.route will create a webpage, and a name can be set for the route of a page. In the original page that doesn't have any additional routes, and in the index page, it will directly go to the login page.
+
+## Using POST to move variable from html file to Python
+
+```.py
+@app.route('/login',methods=['POST'])
+```
+This code in Python is justifying that there is a post method used within the webpage
+
+```.html
+<form method="post" class="container">
+    <h2>Login</h2>
+        <div>
+            <label for="">Email</label>
+            <input type="email" name="email">
+        </div>
+        <div>
+            <label for="">Password</label>
+            <input type="password" name="passwd">
+        </div>
+        <div>
+            <input type="submit"  class="button" name="" value="Log In">
+            <a href="{{ url_for("signup") }}"  class="button">Sign up</a>
+        </div>
+</form>
+```
+On the html file, the part where the 'POST' method occurs has to be assigned, and in this example, and in this example there has to be a user input for the 'POST' to happen
+
+```.py
+def login():
+    msg=""
+    if request.method == 'POST':
+        email = request.form['email']
+        passwd = request.form['passwd']
+```
+Back in the Python file, when there is a 'POST' in the html file, it will save the inputs in the forms (email, password) as an individual variable. This is used in anywhere that requires an input, so in the login, signup, editing posts, editing profile and creating a bookmark uses this 'POST' function.
+
+## 
+```.py
+```
+
+## 
+```.py
+```
+
+## 
+```.py
+```
+
+## 
+```.py
+```
+
+## 
+```.py
+```
+
+## 
+```.py
+```
+
+### 
+```.py
+```
+
+## 
+```.py
+```
+
+
+
+
 
 ## Screen Shots from the app
 ![]()
