@@ -127,7 +127,8 @@ The data of the different user information and post information will be stored i
 # Criteria C: Development
 ## Existing tools
 
-## Imports
+## Basic programs
+### Imports
 
 ```.py
 from flask import Flask, render_template, request, redirect, url_for, make_response
@@ -138,7 +139,7 @@ This is the items that are imported into the python file. Flask is the import th
 My_lib is a library that I have created, which includes the database worker and the functions for hashing and unhashing the password. Usability of these codes are introduced below.
 
 
-## Database worker
+### Database worker
 ```.py
 **#database worker
 class database_worker:
@@ -162,7 +163,7 @@ As the users need their information and post information has to be stored in an 
 
 Connection and cursor allows us to directly connect to the database, search is used for finding and bringing data from the database, save is for adding and uploading any data into the database, and close is for ending the connection between the python file and the database.
 
-## Hashing the password
+### Hashing the password
 ```.py
 from passlib.hash import sha256_crypt
 
@@ -188,7 +189,7 @@ check_password will take 2 inputs, hashed_password and user_password, and then u
 
 The last code is made for testing the hashing system, because we have to see if it is securely hashed.
 
-## Running the app
+### Running the app
 ```.py
 # at the start of the program
 app = Flask(__name__)
@@ -199,7 +200,7 @@ if __name__ == '__main__':
 ```
 This is the code that is used to create and run the app. This is significant for the program, because withought this, there wouldn't be any app.
 
-## Preparing the database
+### Preparing the database
 ```.py
 def create_database():
     db = database_worker("social_net.db")
@@ -227,7 +228,7 @@ def create_database():
 ```
 Using this create database code, the different tables are created (for users, posts and bookmarks) and saved into the database "social_net.db", which is an SQLite database file. These tables are significant for this program, as all the user inputs will be saved in here. 
 
-## The original page
+### The original page
 ```.py
 @app.route('/')
 @app.route('/index')
@@ -236,7 +237,7 @@ def index():  # put application's code here
 ```
 App.route will create a webpage, and a name can be set for the route of a page. In the original page that doesn't have any additional routes, and in the index page, it will directly go to the login page.
 
-## Using POST to move variable from html file to Python
+### Using POST to move variable from html file to Python
 
 ```.py
 @app.route('/login',methods=['GET','POST'])
@@ -271,7 +272,9 @@ def login():
 ```
 Back in the Python file, when there is a 'POST' in the html file, it will save the inputs in the forms (email, password) as an individual variable. This is used in anywhere that requires an input, so in the login, signup, editing posts, editing profile and creating a bookmark uses this 'POST' function.
 
-## Logging in, logging out
+## Matching the user's requirements
+
+### Logging in, logging out
 When it comes to social media, it is necessary that the user can login and logout whenever they want to. And, the database will have different accounts, and it is important for the program to know which users are logged in to the website, and which users are logged out from the website. 
 ```.py
 @app.route('/login',methods=['GET','POST'])
@@ -308,7 +311,11 @@ Whenever the login doesn't work, it shows an error message with what is wrong wi
 {% endif %}
 ```
 This html code is saying that if there is a message, in other words, if the message isn't blank, it shows "Error:" and the message set above in the python code. 
+
+
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/error1.png)
+
+
 So for example when a user inputs a wrong email, the message will show up like this.
 
 ## 
