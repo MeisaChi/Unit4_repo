@@ -271,9 +271,45 @@ def login():
 ```
 Back in the Python file, when there is a 'POST' in the html file, it will save the inputs in the forms (email, password) as an individual variable. This is used in anywhere that requires an input, so in the login, signup, editing posts, editing profile and creating a bookmark uses this 'POST' function.
 
-## 
+## Logging in, logging out
+When it comes to social media, it is necessary that the user can login and logout whenever they want to. And, the database will have different accounts, and it is important for the program to know which users are logged in to the website, and which users are logged out from the website. 
 ```.py
+@app.route('/login',methods=['GET','POST'])
+def login():
+    msg=""
+    if request.method == 'POST':
+        email = request.form['email']
+        passwd = request.form['passwd']
+        db = database_worker("social_net.db")
+        user = db.search(f"SELECT * from users where email = '{email}'")
+        if user:
+            user = user[0] #search function returns a list
+            id, uname, email_db, hashed = user
+            if check_password(hashed_password=hashed, user_password=passwd):
+                response = make_response(redirect('timeline'))
+                response.set_cookie('user_id', f"{id}") #cookie is a string
+                return response
+            else:
+                msg = "password does not match"
+        else:
+            msg = "user does not exist"
+    return render_template("login.html", message=msg)
+
 ```
+This is the code used for login. After getting a post method and collecting data from the user input on the website, the program will use database_worker introduced above, to find an account that matches the inputs. Then, using check_password, the program compares the input in the password form, the password from the database, with hashed/unhashed matched. 
+
+If the user is able to successfully login, they are redirected to the 'timeline' page, the program gets the user id from the account data collected above, and a cookie is set as the user id. 
+
+Whenever the login doesn't work, it shows an error message with what is wrong with the input. This is done by message being blank at the start, and a string is put into the message when the program recieves a post method, but unable to login.
+
+```.html
+{% if message %}
+<div class="error"><p>Error: {{ message }}</p></div>
+{% endif %}
+```
+This html code is saying that if there is a message, in other words, if the message isn't blank, it shows "Error:" and the message set above in the python code. 
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/error1.png)
+So for example when a user inputs a wrong email, the message will show up like this.
 
 ## 
 ```.py
