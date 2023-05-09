@@ -427,11 +427,151 @@ When using the posting function, the content of the post might become slightly l
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/makepost.png)
 **Fig.** *Actual functionality of the use of textarea in html.*  
 
+```.py
+@app.route('/post', methods=["GET", "POST"])
+def post():
+    db = database_worker("social_net.db")
+    if request.cookies.get('user_id'):#if there is a user logged in
+    if request.method == 'POST':
+        user_id=request.cookies.get('user_id')
+        title = request.form['title']
+        content = request.form['Content']
+        price = request.form['price']
+        location = request.form['location']
+        if len(title) > 0 and len(content) > 0:
+            new_post = f"INSERT into posts (title, content, price, location, user_id) values('{title}','{content}','{price}','{location}',{user_id})"
+            db.run_save(query=new_post)
+            return redirect('timeline')
+    return render_template("post.html")
+```
+This is the code for saving the post to the posts table on the social_net database. Similar to the login, sign up and others, this also collects data from the user input. In here, the user has to have a title and a content(has to be longer than a letter). After a post is made, the user is redirected back to the timeline.
 
-### Post definition  - SC.4
+
+### Show posts and user definition  - SC.4
+The client desires to be able to check their own posts as well as other people's posts on cafe, too.
+```.py
+db = database_worker("social_net.db")
+posts = db.search("SELECT * From posts")
+for p in posts:
+    cookie = int(request.cookies.get('user_id'))
+return render_template("timeline.html", posts=posts, uname=uname, cookie=cookie)    
+```
+In this extracted python code, after the timeline page is loaded, the program gets list of all the post from the posts table in the database. Then, the program will get the cookie (to get the current user logged in).
+
+```.html
+{% for p in posts %}
+    <div>
+    <tbody>
+        <h2 class="posttitle">{{ p[1] }}</h2>
+        <p><a href="{{ url_for("profile", user_id=p[5]) }}" class="clicktouser">{{ uname[p[0]] }}</a></p>
+        <p class="context">{{ p[2] }}</p>
+        <p class="price">{{ p[3] }}</p>
+        <p class="location">{{ p[4] }}</p>
+    </tbody>
+    <div class="button-container">
+    <form method="post">
+    <button class="bookmark" name="bookmark"><ion-icon name="bookmark-outline"></ion-icon></button>
+    <input type="hidden" name="post_name" value="{{ p[1] }}">
+    {% if cookie==p[5]  %}
+    <input type="submit" class="button" name="edit" value="Edit post">
+    {% endif  %}
+    </form>
+```
+Here in the timeline html file, for every post, the different attributes for a post are shown. Also, a button with bookmark is shown, and if the cookie (the logged in user) is the same as the user id of a post, it shows an edit post button.
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/timeline.png)
+**Fig.** *Posts with and without the edit post button.* 
+
 ### Bookmark function - SC.5
-### Searching function - SC.6
+Another one of the client's needs was to be able to save posts in bookmarks, delete posts from bookmarks.
 
+```.html
+{% if posts %}
+{% for p in posts %}
+    <div>
+    <tbody>
+        <h2 class="posttitle">{{ p[1] }}</h2>
+        <p class="context">{{ p[2] }}</p>
+        <p class="price">{{ p[3] }}</p>
+        <p class="location">{{ p[4] }}</p>
+    </tbody>
+    <div class="button-container">
+    <form method="post">
+    <button class="bookmark" name="trash"><ion-icon name="trash-outline"></ion-icon></button>
+    <input type="hidden" name="post_name" value="{{ p[0] }}">
+    </form>
+    </div>
+    </div>
+    <hr>
+{% endfor %}
+{% else %}
+<h2>You do not have any bookmarks</h2>
+{% endif %}
+```
+This is the html for bookmarks page. If there is a post, it shows the post with a trash button on the bottom, and if there are no posts in the bookmark, it will say 'you do not have any bookmarks.'
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/bookmark.png)
+**Fig.** *A bookmark page with a bookmark.* 
+
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/no_bookmark.png)
+**Fig.** *A bookmark page without a bookmark.* 
+
+```.py
+elif 'bookmark' in request.form:
+    postname = request.form.get("post_name")
+    cookie = int(request.cookies.get('user_id'))
+    db = database_worker("social_net.db")
+    title = db.search(f"SELECT title FROM posts WHERE title == '{postname}'")
+    content = db.search(f"SELECT content FROM posts WHERE title == '{postname}'")
+    price = db.search(f"SELECT price FROM posts WHERE title == '{postname}'")
+    location = db.search(f"SELECT location FROM posts WHERE title == '{postname}'")
+    user_id = db.search(f"SELECT user_id FROM posts WHERE title == '{postname}'")
+    query = f"""Insert into bookmarks(title, content, price, location, user_id, cookie) values
+                        ('{title[0][0]}','{content[0][0]}','{price[0][0]}','{location[0][0]}','{user_id[0][0]}','{cookie}')"""
+    db.run_save(query)
+    db.close()
+    return redirect('bookmarks')
+```
+This is the python code back in the timeline page. When the bookmark button is pressed, the program collects the name of the post, and also collects the cookie. Then, the every attribute is taken from the table posts in the database where the name of the post matches, and are inserted into a new database called titles. After closing the database, the user is redirected to the bookmarks page.
+
+```.py
+@app.route('/bookmarks', methods=['GET', 'POST'])
+def bookmarks():
+    cookie = int(request.cookies.get('user_id'))
+    db = database_worker("social_net.db")
+    posts = db.search(f"SELECT * From bookmarks where cookie={cookie}")
+    response = render_template("bookmarks.html", posts=posts)
+    return response
+```
+This is the python code running the bookmarks page. First, the program gets the current cookie, and searches the bookmarks table in social_net.db where the collected cookie matches the cookie in the database. The matched posts are saved, and the bookmarks html is rendered.
+
+```.py
+if request.method == 'POST':
+    postname = request.form.get("post_name") 
+    db = database_worker("social_net.db")
+    query = f"""DELETE from bookmarks where id ={postname}"""
+    db.run_save(query)
+    db.close()
+    response = redirect("bookmarks")
+return response
+```
+This is the code for deleting posts in bookmarks. A request is sent when the trash button is pressed. The program gets the name of the posts, and from the table bookmarks, deletes the data that matches the collected postname. The user is redirected back to bookmarks.
+
+### Searching function - SC.6
+The last requirement was for the client to be able to search for a specific word.
+
+```.py
+if 'search' in request.form:
+    search_query = request.form.get('search')
+    db = database_worker("social_net.db")
+    posts = db.search(f"SELECT * FROM posts WHERE title LIKE '%{search_query}%' OR content LIKE '%{search_query}%' OR location LIKE '%{search_query}%'")
+    return render_template("timeline.html", posts=posts, uname=uname, cookie=cookie)
+```
+The search function is made within the timeline, and so when a search request is sent, the word that the user is searching for is collected from the site. Then the program looks at the database to see if there are any posts including that specific word. The timeline page is rendered again, with the renewed list of posts.
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/search.png)
+**Fig.** *Search bar.* 
 
 ## 
 ```.py
