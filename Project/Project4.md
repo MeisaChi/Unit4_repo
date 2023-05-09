@@ -106,8 +106,8 @@ The data of the different user information and post information will be stored i
 | 5 | Propose a solution | A proposed solution on github documentation | 15mins | Apr 19 | A |
 | 6 | Wite a design statement | A design statement on my github documentation | 15mins | Apr 19 | A |
 | 7 | Create a success criteria | A finished criteria on my github documentation | 10mins | Apr 19 | A |
-| 8 | Wite a justification for CSS | A justification for CSS on my github documentation | 15mins | Apr 19 | A |
-| 9 | Wite a justification for HTML | A justification for HTML on my github documentation | 15mins | Apr 19 | A |
+| 8 | Create a ER diagram | ER diagram on my github documentation | 10mins | Apr 20 | B |
+| 9 | Wite a justification for Flask | A justification for Flask on my github documentation | 5mins | Apr 22 | A |
 | 10 | Import from unit 3 and add explanations for Database worker | A explanation for Database worker on my github documentation | 5mins | Apr 24 | C |
 | 11 | Import from unit 3 and add explanations for Hashing the password | A explanation for Hashing the password on my github documentation | 5mins | Apr 24 | C |
 | 12 | Create a wireframe diagram | Wireframe diagram on my github documentation | 30mins | Apr 24 | B |
@@ -116,9 +116,19 @@ The data of the different user information and post information will be stored i
 | 15 | Code | Coding progress on my website | 2hrs | May 1 | C |
 | 16 | Code | Coding progress on my website | 3hrs | May 5 | C |
 | 17 | Work on Criteria C | Finalize, adjust, write descriptions for Criteria C | 2hrs | May 8 | C |
+| 18 | Create a flow diagram | Flow diagram on my github documentation | 10mins | May 8 | B |
+| 19 | Create a flow diagram | Flow diagram on my github documentation | 10mins | May 8 | B |
+| 20 | Create a flow diagram | Flow diagram on my github documentation | 10mins | May 8 | B |
+| 21 | Work on taking screenshots for Criteria C | Screenshots on Criteria C | 10mins | May 9 | C |
+| 21 | Write the existing tools | Existing tools on my github documentation | 5mins | May 9 | C |
+
 
 # Criteria C: Development
 ## Existing tools
+Python
+CSS
+HTML
+Flask
 
 ## Basic programs
 ### Imports
