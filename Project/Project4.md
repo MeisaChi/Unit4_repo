@@ -267,8 +267,22 @@ Back in the Python file, when there is a 'POST' in the html file, it will save t
 
 ## Matching the user's requirements
 
-### Logging in, logging out
+### Logging in, logging out - 1/2SC.1 
 When it comes to social media, it is necessary that the user can login and logout whenever they want to. And, the database will have different accounts, and it is important for the program to know which users are logged in to the website, and which users are logged out from the website. 
+
+As shown above in the 'The original page' from Basic programs, when the user opens the website, it automatically redirects to the login page. 
+
+```.html
+<form method="post" class="container">
+    <input type="submit"  class="button" name="" value="Log In">
+    <a href="{{ url_for("signup") }}"  class="button">Sign up</a>
+</form>
+```
+This an extracted html code for the login screen, basically requests a method after an input (pressing the Log in button) is made. The one underneath is a link that redirects to the sign up screen when pressed.
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/logsignbutton.png)
+**Fig.** *Buttons for login and sign up.*  
+
 ```.py
 @app.route('/login',methods=['GET','POST'])
 def login():
@@ -292,7 +306,7 @@ def login():
     return render_template("login.html", message=msg)
 
 ```
-This is the code used for login. After getting a post method and collecting data from the user input on the website, the program will use database_worker introduced above, to find an account that matches the inputs. Then, using check_password, the program compares the input in the password form, the password from the database, with hashed/unhashed matched. 
+After getting a post method and collecting data from the user input on the website, the program will use database_worker introduced above, to find an account that matches the inputs. Then, using check_password, the program compares the input in the password form, the password from the database, with hashed/unhashed matched. 
 
 If the user is able to successfully login, they are redirected to the 'timeline' page, the program gets the user id from the account data collected above, and a cookie is set as the user id. 
 
@@ -307,9 +321,102 @@ This html code is saying that if there is a message, in other words, if the mess
 
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/error1.png)
+**Fig.** *Example for when a user inputs a wrong email, the error message will show up like this.*  
 
 
-So for example when a user inputs a wrong email, the message will show up like this.
+
+```.py
+@app.route('/logout',methods=['GET','POST'])
+def logout():
+    response = make_response(redirect('login'))
+    response.set_cookie("user_id","",expires=0)
+    return response
+```
+Shown above is the python code for the user to logout from their account. When the user is directed to the logout page, the page will immediately redirect the user to the login page, and the cookie will be expired. This is how the program differentiates between logged in and logged out users. 
+
+### Registering an account - 2/2SC.1 
+```.py
+@app.route('/signup',methods=['GET','POST'])
+def signup():
+    msg = ""
+    if request.method == 'POST':
+        uname = request.form['uname']
+        email = request.form['email']
+        passwd = request.form['passwd']
+        passwd2 = request.form['passwd2']
+        db = database_worker("social_net.db")
+        if len(passwd) <6:
+            msg = "password has to be longer than 6 letters"
+        elif passwd != passwd2:
+            msg = "password do not match"
+        else:
+            query = f"""Insert into users(uname, email, password) values
+                    ('{uname}','{email}','{encrypt_password(passwd)}')"""
+            db.run_save(query)
+            response = make_response(redirect('login'))
+            return response
+        db.close()
+    return render_template("signup.html", message=msg)
+```
+
+The system for sign up is pretty similar to login. The dfferences are that:
+- The system checks if the input matches the other input (password and password confirmation)
+- Error messages: Password has to be longer than 6 letters, password has to match
+- After a successful password check, the collected data will all be inserted into the table: users
+- When saving data, the password will be secured (hashed) by using 'encrypt_password'.
+
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/tab_db.png)
+**Fig.** *Table of users in social_net.*  
+
+
+### Editing the account - SC.2
+When creating an account, the user should have the rights to edit and change their email and username.
+
+```.html
+<p>Current username is: {{ u[1] }}</p>
+<input type="text" name="uname" placeholder="New username">
+<p>Current email is: {{ u[2] }}</p>
+<input type="text" name="email" placeholder="New email">
+```
+This html code allows the user to see their current username and email, with the place to input their new account information below.
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/editacc.png)
+**Fig.** *Editting data page.*  
+
+```.py
+@app.route('/users/editacc', methods=['GET', 'POST'])
+def editacc():
+    cookie = int(request.cookies.get('user_id'))
+    db = database_worker("social_net.db")
+    user = db.search(f"Select * from users where id ={cookie}")
+    response = render_template("editacc.html", cookie=cookie, user=user)
+```
+For the program to show the current username and email, as soon as the user is on edit account, the program gets the current logged in user's user id by getting the cookie. Using the user id, the program gets the the whole list of user with the matched user id.
+
+```.py
+if request.method == 'POST':
+    uname = request.form['uname']
+    email = request.form['email']
+    print(uname)
+    db = database_worker("social_net.db")
+    if uname:
+        query = f"""update users set uname = '{uname}' where id = {cookie}"""
+        db.run_save(query)
+    if email:
+        query = f"""update users set email = '{email}' where id = {cookie}"""
+        db.run_save(query)
+    db.close()
+    response = redirect('/timeline')
+return response
+```
+When a post method is requested, the program collects the user inputs. The user may desire to change only their username or email, so the program for updating the database to the new collected data only happens if there is an input in either of the attributes. In the end, the user is directed back to the timeline.
+
+### Creating a post - SC.3
+### Post definition  - SC.4
+### Bookmark function - SC.5
+### Searching function - SC.6
+
 
 ## 
 ```.py
