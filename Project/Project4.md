@@ -413,6 +413,21 @@ return response
 When a post method is requested, the program collects the user inputs. The user may desire to change only their username or email, so the program for updating the database to the new collected data only happens if there is an input in either of the attributes. In the end, the user is directed back to the timeline.
 
 ### Creating a post - SC.3
+The main purpose of this app is for the client to record information of any cafe in a single post.
+
+```.html
+<input type="text" name="title" placeholder="Title">
+<textarea name="Content"  rows="5" cols="80" placeholder="Content"></textarea>
+<input type="text" name="price" placeholder="Price range">
+<input type="text" name="location" placeholder="Location">
+```
+When using the posting function, the content of the post might become slightly longer. Therefore, for the place to input context, instead of an text input, a textarea is used. This way, even when the user types beyond the width of the textbox, it will automatically go to a new line.
+
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/makepost.png)
+**Fig.** *Actual functionality of the use of textarea in html.*  
+
+
 ### Post definition  - SC.4
 ### Bookmark function - SC.5
 ### Searching function - SC.6
