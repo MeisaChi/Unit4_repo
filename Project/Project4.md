@@ -8,7 +8,7 @@
 
 ## Problem definition
 
-**Context:** The client, a student studying in a high schools likes to travel during long term breaks, and especially enjoys going to different cafes in the travelled region. But it is always difficult to find an good cafe, as the client has to look at a lot of components to decide. The client is very picky in food, the appearence of the cafe, and also as a student, the client has to know the price of the food before going to the cafe. This process of finding a cafe usually takes a long time, as the client has to search through different websites to find a favourite, and go on to other websites to find the other menus and the prices. Therefore, the client is craving for a SNS platform where they can create an account, login and post informations about different cafes, and also save any posts of cafe that they are interested in. 
+**Context:** The client is a high school students, who like so travel, and enjoys going to different cafes. But whenever the client is trying to find a cafe to go to, they always striggle, as the client has to look at the different components such as the concept of the cafe, the location and the price range of the food sold in the cafe. And usually, that includes looking through different websites to find each components of information. As looking through different websites takes time, the client is hoping for a simple platform. This is, where they can create an editable account and login to make the information (name of the cafe, price, location) into a single post, as well as also look at other's reccomendations, saving ones that the client finds interesting. Also, as the client is a traveller, they want to be able to search for a specific component (name of the cafe, price, location) to make the process of finding cafes easier.
 
 **Problem:** The client is a student with limited budget, finding difficulties to find a cafe that fits their criteria
 
@@ -42,12 +42,12 @@ HTML is an open-source program, which can be implemented free of cost[^5], which
 
 
 ## Success criteria
-1. The user can login or create an account and the account data will be securely stored
-2. The user can switch between different pages
+1. The user can login or create an account and the account data will be securely stored in a database 'social_net.db'
+2. The user can edit their account, meaning that the username and the email of the account can be changed
 3. The user can make a post, which will include a title (name of the cafe), context, price range and location
 4. The user can look at other people's posts
-5. The user can bookmark posts, which will be saved in their bookmarks folder
-6. The user is able edit their profile, which means that they can change their email or username
+5. The user can bookmark posts and delete bookmarks, which will be saved in their bookmarks folder
+6. The user is able to search for a post using a specific word 
 
 # Criteria B: Design
 
@@ -126,8 +126,6 @@ The data of the different user information and post information will be stored i
 
 # Criteria C: Development
 ## Existing tools
-
-## Python Code
 
 ## Imports
 
