@@ -226,7 +226,7 @@ App.route will create a webpage, and a name can be set for the route of a page. 
 ## Using POST to move variable from html file to Python
 
 ```.py
-@app.route('/login',methods=['POST'])
+@app.route('/login',methods=['GET','POST'])
 ```
 This code in Python is justifying that there is a post method used within the webpage
 
