@@ -66,6 +66,21 @@ Shows all the screens and the connections between the different screen, which is
 **Fig.3** *ER diagram for the database in the Cafe social media*  
 The ER diagram shows the different tables 'users', 'posts' and 'bookmarks', as well as it's different properties within the database 'social_net.db', and it's connection to each other.
 
+## UML Diagram
+![]()
+**Fig.4** *UML diagram for the OOP classes in the Cafe social media*
+
+## Flow Diagrams
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/flow_in.jpg)
+**Fig.5** *Flow diagram for the Logging in function in the Cafe social media*
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/flow_out.jpg)
+**Fig.5** *Flow diagram for the Logging out function in the Cafe social media*
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/flow_post.jpg)
+**Fig.5** *Flow diagram for the posting function in the Cafe social media*
+
+
 ## Database Storage 
 The data of the different user information and post information will be stored in a SQLite database 'social_net.db'.  
 ### Users 
