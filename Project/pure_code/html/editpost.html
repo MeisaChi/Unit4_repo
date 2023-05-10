@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/logsign.css">
+<body>
+{% for p in post %}
+<div class="container">
+<h1>Edit your post</h1>
+<form method="post">
+    <input type="text" name="Title" placeholder="{{ p[1] }}">
+    <textarea name="Content"  rows="5" cols="80" placeholder="{{ p[2] }}"></textarea>
+    <input type="text" name="Price" placeholder="{{ p[3] }}">
+    <input type="text" name="Location" placeholder="{{ p[4] }}">
+    <input type="submit" class="button" name="edit" value="Change">
+    <a href="{{ url_for("timeline") }}" class="button">Cancel</a>
+    <input type="submit" class="button2" name="delete" value="Delete">
+</form>
+</div>
+{% endfor %}
+</body>
+</html>
