@@ -122,25 +122,23 @@ The data of the different user information and post information will be stored i
 | 18 | Development: Password hasher | Imported and updated from project unit 3, allows password to be hashed and unhashed | 5mins | May 1 | C |
 | 19 | Development: Login screen | The user is able to login with a correct combination of email and password, or choose to create an account | 45mins | May 2 | C |
 | 20 | Development: Sign up screen | The user is able to input a username, email and password to create an account that will be saved into the database, can be used for logging in | 30mins | May 3 | C |
-
-| 1 |  |  |  |  |  |
-| 1 |  |  |  |  |  |
-| 1 |  |  |  |  |  |
-
-
-
-
-
-| 13 | Code | Coding progress on my website | 3hrs | Apr 25 | C |
-| 14 | Code | Coding progress on my website | 2hrs | Apr 28 | C |
-| 15 | Code | Coding progress on my website | 2hrs | May 1 | C |
-| 16 | Code | Coding progress on my website | 3hrs | May 5 | C |
-| 17 | Work on Criteria C | Finalize, adjust, write descriptions for Criteria C | 2hrs | May 8 | C |
-| 18 | Create a flow diagram | Flow diagram on my github documentation | 10mins | May 8 | B |
-| 19 | Create a flow diagram | Flow diagram on my github documentation | 10mins | May 8 | B |
-| 20 | Create a flow diagram | Flow diagram on my github documentation | 10mins | May 8 | B |
-| 21 | Work on taking screenshots for Criteria C | Screenshots on Criteria C | 10mins | May 9 | C |
-| 21 | Write the existing tools | Existing tools on my github documentation | 5mins | May 9 | C |
+| 21 | Development: timeline screen | The user can look and bookmark other people's posts or go to their profile, the user can choose to go to bookmarks, post or logout | 60mins | May 5 | C |
+| 22 | Development: posting screen | The user enter attributes and create a post where it will be on timeline. They can also edit or delete any posts made by them | 60mins | May 5 | C |
+| 23 | Development: profile screen | The user can look at their own profile and choose to edit their own profile, or can look at other user's screen where it will show their posts | 45mins | May 6 | C |
+| 24 | Development: Editting an account | The user may input a new username or an email, will be overwritten on talbe 'users' | 30mins | May 7 | C |
+| 25 | Development: Editting a post | The user may input any new attributes, will be overwritten on talbe 'posts' | 30mins | May 7 | C |
+| 26 | Development: Bookmark screen | The user may look at the bookmarks they have made | 30mins | May 8 | C |
+| 27 | Development: logout | The user may logout from an logged in account, will be redirected back to the login screen | 30mins | May 8 | C |
+| 28 | Development: Search | The user may input a specific attribute, timeline will only show posts with the attribute | 60mins | May 9 | C |
+| 29 | Development: Documentation | Documentation will be made for the programs used to clear the success criteria | 60mins | May 9 | C |
+| 28 | Development: Search | The user may input a specific attribute, timeline will only show posts with the attribute | 60mins | May 10 | C |
+| 29 | Design: Flow diagram | Flow diagram to show the system behind the Login | 20mins | May 10 | B |
+| 30 | Design: Flow diagram | Flow diagram to show the system behind the Logout | 15mins | May 10 | B |
+| 31 | Design: Flow diagram | Flow diagram to show the system behind the Posting | 45mins | May 10 | B |
+| 32 | Test: Test plan | Run the assigned tests in the test plan | 30mins | May 10 | C |
+| 33 | Design: Screenshots | Take screenshots to put on Criterion C | 10mins | May 10 | C |
+| 34 | Development: existing tools | Update my existing tools in Criterion C | 5mins | May 9 | C |
+| 35 | Planning: Script | Create s script for the criterion D video | 30mins | May 10 | D |
 
 
 # Criteria C: Development
