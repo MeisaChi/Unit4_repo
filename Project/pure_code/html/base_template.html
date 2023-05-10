@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!icon library>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>Title</title>
+    {% else %}
+    <title>Welcome to the most popular SNS</title>
+    {% endif %}
+    <link rel="stylesheet" href="/static/cafetter_template.css">
+</head>
+<body>
+<div class="all">
+<div class="sidebar" tabindex="0">
+    <a href="{{ url_for("timeline") }}"><ion-icon name="home"></ion-icon>Timeline</a>
+    <a href="{{ url_for("bookmarks") }}"><ion-icon name="bookmark-outline"></ion-icon>Bookmarks</a>
+    <a href="{{ url_for("post") }}"><ion-icon name="cafe-outline"></ion-icon>Post</a>
+    <a href="{{ url_for("logout") }}"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
+    <form method="post">
+    <div class="search"><ion-icon name="search-outline"></ion-icon><input type="text" name="search" placeholder="Search"></div>
+    </form>
+</div>
+<div class="container">
+{% block content %}
+{% endblock %}
+</div>
+
+</div>
+
+</body>
+</html>
