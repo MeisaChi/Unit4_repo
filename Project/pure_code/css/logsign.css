@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+* { font-family: 'Raleway' }
+
+div{
+    text-align: center;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 500px;
+    background-color: #dbc1ac;
+    padding: 50px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+textarea[name="Content"] {
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+.error{
+    color: red;
+}
+
+.button {
+  background-color: #a08168; 
+  border: none; 
+  color: white; 
+  padding: 12px 24px; 
+  text-align: center;
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 4px 2px;
+  cursor: pointer; 
+  border-radius: 20px; 
+}
+
+.button:hover {
+  background-color: #92745c; 
+}
+
+.button2 {
+  background-color: #c75d56; 
+  border: none; 
+  color: white; 
+  padding: 12px 24px; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; 
+  margin: 4px 2px; 
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.button2:hover {
+  background-color: #9c3a33;
+}
