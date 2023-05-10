@@ -8,9 +8,21 @@
 
 ## Problem definition
 
-**Context:** The client is a high school students, who like so travel, and enjoys going to different cafes. But whenever the client is trying to find a cafe to go to, they always striggle, as the client has to look at the different components such as the concept of the cafe, the location and the price range of the food sold in the cafe. And usually, that includes looking through different websites to find each components of information. As looking through different websites takes time, the client is hoping for a simple platform. This is, where they can create an editable account and login to make the information (name of the cafe, price, location) into a single post, as well as also look at other's reccomendations, saving ones that the client finds interesting. Also, as the client is a traveller, they want to be able to search for a specific component (name of the cafe, price, location) to make the process of finding cafes easier.
+**Context:** The client is a high school students, who like so travel, and enjoys going to different cafes. But whenever the client is trying to find a cafe to go to, they always struggle, as the client has to look at the different components such as the concept of the cafe, the location and the price range of the food sold in the cafe. And usually, that includes looking through different websites to find each components of information. As looking through different websites takes time, the client is hoping for a simple platform. This is, where they can create an editable account and login to make the information (name of the cafe, price, location) into a single post, as well as also look at other's recommendations, saving ones that the client finds interesting. Also, as the client is a traveller, they want to be able to search for a specific component (name of the cafe, price, location) to make the process of finding cafes easier.
 
 **Problem:** The client is a student with limited budget, finding difficulties to find a cafe that fits their criteria
+
+**Note from the client interview:**
+
+Client 
+- [ ] Student—> limited budget 
+- [ ] Travel, cafe
+- [ ] Research takes time—> Single post
+- [ ] Simple, easy
+- [ ] Name of the cafe, price, location
+- [ ] Other people, share
+- [ ] Save functions
+- [ ] Search for specific location and others?
 
 ## Proposed Solution
 
