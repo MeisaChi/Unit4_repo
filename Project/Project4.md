@@ -638,7 +638,6 @@ All notes from interviews can be found in the appendix.
 **Client**
 | Success Criteria | Achieved? | Feedback |
 |-|-|-|
-| Success Criteria | Achieved? | Feedback |
 | 1. The user can login or create an account and the account data will be securely stored in a database 'social_net.db' | Yes | Easy to understand |
 | 2. The user can edit their account, meaning that the username and the email of the account can be changed | Yes | N/A |
 | 3. The user can make a post, which will include a title (name of the cafe), context, price range and location | Yes | N/A |
@@ -650,7 +649,6 @@ This is the evaluation and feedbacks made by the client
 **User S**
 | Success Criteria | Achieved? | Feedback |
 |-|-|-|
-| Success Criteria | Achieved? | Feedback |
 | 1. The user can login or create an account and the account data will be securely stored in a database 'social_net.db' | Yes | Works |
 | 2. The user can edit their account, meaning that the username and the email of the account can be changed | Yes | Should allow the user to change their password |
 | 3. The user can make a post, which will include a title (name of the cafe), context, price range and location | Yes | Nice function |
