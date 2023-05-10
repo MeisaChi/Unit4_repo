@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/logsign.css">
+<body>
+<div class="container">
+<h1>Create a new post</h1>
+<form method="post">
+    <input type="text" name="title" placeholder="Title">
+    <textarea name="Content"  rows="5" cols="80" placeholder="Content"></textarea>
+    <input type="text" name="price" placeholder="Price range">
+    <input type="text" name="location" placeholder="Location">
+    <input type="submit" class="button" value="Post">
+    <a href="{{ url_for("timeline") }}" class="button">Cancel</a>
+</form>
+</div>
+</body>
+</html>
