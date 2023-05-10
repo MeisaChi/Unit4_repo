@@ -8,21 +8,9 @@
 
 ## Problem definition
 
-**Context:** The client is a high school students, who like so travel, and enjoys going to different cafes. But whenever the client is trying to find a cafe to go to, they always struggle, as the client has to look at the different components such as the concept of the cafe, the location and the price range of the food sold in the cafe. And usually, that includes looking through different websites to find each components of information. As looking through different websites takes time, the client is hoping for a simple platform. This is, where they can create an editable account and login to make the information (name of the cafe, price, location) into a single post, as well as also look at other's recommendations, saving ones that the client finds interesting. Also, as the client is a traveller, they want to be able to search for a specific component (name of the cafe, price, location) to make the process of finding cafes easier.
+**Context:** The client is a high school students, who like so travel, and enjoys going to different cafes. But whenever the client is trying to find a cafe to go to, they always struggle, as the client has to look at the different components such as the concept of the cafe, the location and the price range of the food sold in the cafe. And usually, that includes looking through different websites to find each components of information. As looking through different websites takes time, the client is hoping for a simple platform. This is, where they can create an editable account and login to make the information (name of the cafe, price, location) into a single post, as well as also look at other's recommendations, saving ones that the client finds interesting. Also, as the client is a traveller, they want to be able to search for a specific component (name of the cafe, price, location) to make the process of finding cafes easier.　Notes can be seen in the appendix.
 
 **Problem:** The client is a student with limited budget, finding difficulties to find a cafe that fits their criteria
-
-**Note from the client interview:**
-
-Client 
-- [ ] Student—> limited budget 
-- [ ] Travel, cafe
-- [ ] Research takes time—> Single post
-- [ ] Simple, easy
-- [ ] Name of the cafe, price, location
-- [ ] Other people, share
-- [ ] Save functions
-- [ ] Search for specific location and others?
 
 ## Proposed Solution
 
@@ -100,16 +88,6 @@ The data of the different user information and post information will be stored i
 | id | title | content | price | location | user_id | cookie |
 |-|-|-|-|-|-|-|
 | 7 (int. primary key) | Boardgame Cafe (str) | There is a board game cafe, nice and simple (str) | 2000-3000 yen (str) | Karuizawa (str) | 2 (int) | 2 (int) |
-
-
-
-1. The user can login or create an account and the account data will be securely stored in a database 'social_net.db'
-2. The user can edit their account, meaning that the username and the email of the account can be changed
-3. The user can make a post, which will include a title (name of the cafe), context, price range and location
-4. The user can look at other people's posts
-5. The user can bookmark posts and delete bookmarks, which will be saved in their bookmarks folder
-6. The user is able to search for a post using a specific word 
-
 
 ## Test Plan
 | Description | Category | Input | Expected Output | Purpose | Success Criteria |
@@ -644,16 +622,71 @@ The search function is made within the timeline, and so when a search request is
 
 **Fig.** *Search bar.* 
 
-
-
-
-
 ## Screen Shots from the app
 ![]()
 **Fig.**
-**
 
 
 # Criteria D: Functionality
 ## Video
 [CLICK HERE FOR THE VIDEO]()
+
+# Criteria E: Evaluation
+
+All notes from interviews can be found in the appendix.
+
+**Client**
+| Success Criteria | Achieved? | Feedback |
+|-|-|-|
+| Success Criteria | Achieved? | Feedback |
+| 1. The user can login or create an account and the account data will be securely stored in a database 'social_net.db' | Yes | Easy to understand |
+| 2. The user can edit their account, meaning that the username and the email of the account can be changed | Yes | N/A |
+| 3. The user can make a post, which will include a title (name of the cafe), context, price range and location | Yes | N/A |
+| 4. The user can look at other people's posts | Yes | N/A |
+| 5. The user can bookmark posts and delete bookmarks, which will be saved in their bookmarks folder | Yes | Very good, can add a way to differentiate on timeline between bookmarked posts and non-bookmarked posts?|
+| 6. The user is able to search for a post using a specific word  | Yes | Good |
+This is the evaluation and feedbacks made by the client
+
+**User S**
+| Success Criteria | Achieved? | Feedback |
+|-|-|-|
+| Success Criteria | Achieved? | Feedback |
+| 1. The user can login or create an account and the account data will be securely stored in a database 'social_net.db' | Yes | Works |
+| 2. The user can edit their account, meaning that the username and the email of the account can be changed | Yes | Should allow the user to change their password |
+| 3. The user can make a post, which will include a title (name of the cafe), context, price range and location | Yes | Nice function |
+| 4. The user can look at other people's posts | Yes | Works |
+| 5. The user can bookmark posts and delete bookmarks, which will be saved in their bookmarks folder | Yes | Works |
+| 6. The user is able to search for a post using a specific word  | Yes | Works |
+This is the evaluation and feedbacks made by the another student
+
+## Suggestions
+
+**Name the website**
+The first suggestion that I got for further development was to add a name and a logo to the social media. I never thought about adding a name to the website, but since it si a social media, it should have a name. As soon as I can come up with a name and a design of a logo, I can try implementing it into the website.
+
+**Design improvements**
+The second suggestion that I got was improving my css designs. This is: the bookmarks - being able to see if a post is already bookmarked or not by the color of the button, the sidebar - can have the redirector to the profile page on the side bar too, the colors - Can have more colors, not just white and brown. These suggestions are very helpful suggestions, because they are actual user interface suggestions, and cannot be done without others. Having different perspectives on the design can help improve the design, and working to implementing these suggestions will happen after there are other perspectived opinions.
+
+**Changing the password**
+Another suggestion that I got is that from the accont editing menu, the user should be able to edit their password, too. This is a very good idea, and in order to implement this, just like any other websites that includes logging in, the progra will have to be able to send an email to the owner of each user accounts. There has to be further research and development in order to make this happen.
+
+**Images**
+The last suggestion that I got was to have the user be able to add images to their posts. I thought this was also a very good and a reasonable suggestions, words tell less than visuals when it comes to cafe and food. There has to be a way to add photos to the posts database, and from the database to the website in order to implement the adding images function. 
+
+# Appendix
+
+**Client interview on problem**
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/cliint.png)
+
+**Client interview on evaluation and feedback**
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/clifed.png)
+
+**User S interview on evaluation and feedback**
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/usefed.png)
+
+**Video Script**
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/vidscr.png)
