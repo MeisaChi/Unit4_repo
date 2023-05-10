@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/logsign.css">
+<body>
+{% for u in user %}
+<div class="container">
+<h1>Edit your account</h1>
+<form method="post">
+    <p>Current username is: {{ u[1] }}</p>
+    <input type="text" name="uname" placeholder="New username">
+    <p>Current email is: {{ u[2] }}</p>
+    <input type="text" name="email" placeholder="New email">
+    <input type="submit" class="button" value="Change">
+    <a href="{{ url_for("profile", user_id=cookie) }}" class="button">Cancel</a>
+</form>
+</div>
+{% endfor %}
+</body>
+</html>
