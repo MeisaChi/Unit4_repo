@@ -72,7 +72,7 @@ Shows all the screens and the connections between the different screen, which is
 The ER diagram shows the different tables 'users', 'posts' and 'bookmarks', as well as it's different properties within the database 'social_net.db', and it's connection to each other.
 
 ## UML Diagram
-![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/uml.jpg))
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/uml.jpg)
 **Fig.5** *UML diagram for the OOP classes used in the Cafe social media*
 
 ## Flow Diagrams
@@ -343,6 +343,7 @@ As shown above in the 'The original page' from Basic programs, when the user ope
 This an extracted html code for the login screen, basically requests a method after an input (pressing the Log in button) is made. The one underneath is a link that redirects to the sign up screen when pressed.
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/logsignbutton.png)
+
 **Fig.** *Buttons for login and sign up.*  
 
 ```.py
@@ -383,6 +384,7 @@ This html code is saying that if there is a message, in other words, if the mess
 
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/error1.png)
+
 **Fig.** *Example for when a user inputs a wrong email, the error message will show up like this.*  
 
 
@@ -429,6 +431,7 @@ The system for sign up is pretty similar to login. The dfferences are that:
 
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/tab_db.png)
+
 **Fig.** *Table of users in social_net.*  
 
 
@@ -444,6 +447,7 @@ When creating an account, the user should have the rights to edit and change the
 This html code allows the user to see their current username and email, with the place to input their new account information below.
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/editacc.png)
+
 **Fig.** *Editting data page.*  
 
 ```.py
@@ -487,6 +491,7 @@ When using the posting function, the content of the post might become slightly l
 
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/makepost.png)
+
 **Fig.** *Actual functionality of the use of textarea in html.*  
 
 ```.py
@@ -542,6 +547,7 @@ In this extracted python code, after the timeline page is loaded, the program ge
 Here in the timeline html file, for every post, the different attributes for a post are shown. Also, a button with bookmark is shown, and if the cookie (the logged in user) is the same as the user id of a post, it shows an edit post button.
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/timeline.png)
+
 **Fig.** *Posts with and without the edit post button.* 
 
 ### Bookmark function - SC.5
@@ -573,10 +579,12 @@ Another one of the client's needs was to be able to save posts in bookmarks, del
 This is the html for bookmarks page. If there is a post, it shows the post with a trash button on the bottom, and if there are no posts in the bookmark, it will say 'you do not have any bookmarks.'
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/bookmark.png)
+
 **Fig.** *A bookmark page with a bookmark.* 
 
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/no_bookmark.png)
+
 **Fig.** *A bookmark page without a bookmark.* 
 
 ```.py
@@ -633,35 +641,8 @@ if 'search' in request.form:
 The search function is made within the timeline, and so when a search request is sent, the word that the user is searching for is collected from the site. Then the program looks at the database to see if there are any posts including that specific word. The timeline page is rendered again, with the renewed list of posts.
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/search.png)
+
 **Fig.** *Search bar.* 
-
-## 
-```.py
-```
-
-## 
-```.py
-```
-
-## 
-```.py
-```
-
-## 
-```.py
-```
-
-## 
-```.py
-```
-
-### 
-```.py
-```
-
-## 
-```.py
-```
 
 
 
