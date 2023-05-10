@@ -103,27 +103,34 @@ The data of the different user information and post information will be stored i
 | Task No | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
 |-|-|-|-|-|-|
 | 1 | Planning: Meet the client | Identify the client's problem and their requirements | 15mins | Apr 9 | A |
-| 1 |  |  |  |  |  |
-| 1 |  |  |  |  |  |
-| 1 |  |  |  |  |  |
-| 1 |  |  |  |  |  |
-| 1 |  |  |  |  |  |
+| 2 | Planning: thumbnail | Find a thumbnail picture that comes on the top of my documentation | 5mins | Apr 11 | A |
+| 3 | Planning: Problem definition | Write a detailed definition of the client's problem | 15mins | Apr 13 | A |
+| 4 | Planning: Design statement | A detailed statement for the program that I am designing | 15mins | Apr 13 | A |
+| 5 | Planning: Solution Proposal | A detailed description of the solution that I came up with to fit the needs of the client | 20mins | Apr 15 | A |
+| 6 | Planning: Python Justification | A justification for the reason I chose python for this program | 10mins | Apr 19 | A |
+| 7 | Planning: SQLite Justification | A justification for the reason I chose SQLite for this program | 10mins | Apr 19 | A |
+| 8 | Planning: Flask Justification | A justification for the reason I chose Flask for this program | 15mins | Apr 19 | A |
+| 9 | Planning: Success criteria | 6 success criteria that focuses on the client's needs | 20mins | Apr 20 | A |
+| 10 | Planning: Check-up | Check with the client whether the proposal and success criteria meets their requirements | 15mins | Apr 24 | A |
+| 11 | Design: System diagram | Create a system diagram that shows the connection between inputs and outputs, the program | 30mins | Apr 27 | B |
+| 12 | Design: Wireframe diagram | Create a wireframe diagram that shows the different screens available in the website and their connections | 45mins | Apr 27 | B |
+| 13 | Design: ER diagram | Create a ER diagram that shows the different databases used in the program | 15mins | Apr 27 | B |
+| 14 | Design: UML diagram | Create a UML diagram that shows the OOP classes used in the program | 5mins | Apr 28 | B |
+| 15 | Design: Database storage | Shows how the data will be stored in different tables, in social_net.db | 5mins | Apr 29 | B |
+| 16 | Design: test plan | A test plan for different functionalities in the program | 30mins | Apr 30 | B |
+| 17 | Development: Database worker | Imported and updated from project unit 3, allows the program to connect to the database | 5mins | May 1 | C |
+| 18 | Development: Password hasher | Imported and updated from project unit 3, allows password to be hashed and unhashed | 5mins | May 1 | C |
+| 19 | Development: Login screen | The user is able to login with a correct combination of email and password, or choose to create an account | 45mins | May 2 | C |
+| 20 | Development: Sign up screen | The user is able to input a username, email and password to create an account that will be saved into the database, can be used for logging in | 30mins | May 3 | C |
+
 | 1 |  |  |  |  |  |
 | 1 |  |  |  |  |  |
 | 1 |  |  |  |  |  |
 
-| 1 | Find a thumbnail picture | A thumbnail picture that shows up at the top of my github documentation | 5mins | Apr 13 | A |
-| 2 | Write my problem definition | A problem definition on my github documentation | 20mins | Apr 13 | A |
-| 3 | Wite a justification for python | A justification for python on my github documentation | 5mins | Apr 19 | A |
-| 4 | Wite a justification for SQLite | A justification for SQLite on my github documentation | 5mins | Apr 19 | A |
-| 5 | Propose a solution | A proposed solution on github documentation | 15mins | Apr 19 | A |
-| 6 | Wite a design statement | A design statement on my github documentation | 15mins | Apr 19 | A |
-| 7 | Create a success criteria | A finished criteria on my github documentation | 10mins | Apr 19 | A |
-| 8 | Create a ER diagram | ER diagram on my github documentation | 10mins | Apr 20 | B |
-| 9 | Wite a justification for Flask | A justification for Flask on my github documentation | 5mins | Apr 22 | A |
-| 10 | Import from unit 3 and add explanations for Database worker | A explanation for Database worker on my github documentation | 5mins | Apr 24 | C |
-| 11 | Import from unit 3 and add explanations for Hashing the password | A explanation for Hashing the password on my github documentation | 5mins | Apr 24 | C |
-| 12 | Create a wireframe diagram | Wireframe diagram on my github documentation | 30mins | Apr 24 | B |
+
+
+
+
 | 13 | Code | Coding progress on my website | 3hrs | Apr 25 | C |
 | 14 | Code | Coding progress on my website | 2hrs | Apr 28 | C |
 | 15 | Code | Coding progress on my website | 2hrs | May 1 | C |
