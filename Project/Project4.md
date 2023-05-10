@@ -121,6 +121,10 @@ The data of the different user information and post information will be stored i
 | Sign up: Fail: password length | Unit testing | username, email, password <6 letters, password confirmation | Error message: password has to be longer than 6 letters | When the the password does not have more than 6 letters, the sign up should fail and show an error message | 1 |
 | Sign up: Fail: password confirmation | Unit testing | username, email, password, password confirmation | Error message: password do not match | When the passwords inputted by the user does not match, the sign up should fail and show an error message | 1 |
 | Logout | Unit testing | username, email, password, password confirmation | Error message: password do not match | When the passwords inputted by the user does not match, the sign up should fail and show an error message | 1 |
+| Edit account: email | Unit testing | username, email, password, password confirmation | Error message: password do not match | When the passwords inputted by the user does not match, the sign up should fail and show an error message | 1 |
+| Login, sign up, timeline, bookmarks, profile and edit post | Integration testing | username, email, password, password confirmation, cafe name, location, price range | The user is able to sign up, then login, which will redirect them in the timeline, and from there the user can go to bookmarks, profile, edit post or logout | Error message: password do not match | When the passwords inputted by the user does not match, the sign up should fail and show an error message | 1 |
+| Profile and edit account | Integration testing | The user is able to sign up, then login, which will redirect them in the timeline, and from there the user can go to bookmarks, profile, edit post or logout | Error message: password do not match | When the passwords inputted by the user does not match, the sign up should fail and show an error message | 1 |
+
 
 
 
