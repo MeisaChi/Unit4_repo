@@ -103,11 +103,24 @@ The data of the different user information and post information will be stored i
 
 
 
+1. The user can login or create an account and the account data will be securely stored in a database 'social_net.db'
+2. The user can edit their account, meaning that the username and the email of the account can be changed
+3. The user can make a post, which will include a title (name of the cafe), context, price range and location
+4. The user can look at other people's posts
+5. The user can bookmark posts and delete bookmarks, which will be saved in their bookmarks folder
+6. The user is able to search for a post using a specific word 
+
+
 ## Test Plan
 | Description | Category | Input | Expected Output | Purpose | Success Criteria |
 |-|-|-|-|-|-|
-| Login: Successful | Category | Input | Expected Output | Purpose | Success Criteria |
-| Description | Category | Input | Expected Output | Purpose | Success Criteria |
+| Login: Success | Unit testing | email, password | Go to timeline page, set a cookie | The user has to be able to successfully login when their inputs are matched to the data in the 'users' table | 1 |
+| Login: Fail: No user | Unit testing | password | Error message: user does not exist | When there is no user that matches the user input, or there is no input in the email, the login should fail and show an error message | 1 |
+| Login: Fail: password | Unit testing | email, wrong password | Error message: password does not match | When the the password does not match the password on the 'users' table, the login should fail and show an error message | 1 |
+| Sign up: Success | Unit testing | username, email, password, password confirmation | Go to login page, inputs saved onto database | The user has to be able to successfully create an account when their inputs meet the requirements | 1 |
+| Sign up: Fail: password length | Unit testing | username, email, password <6 letters, password confirmation | Error message: password has to be longer than 6 letters | When the the password does not have more than 6 letters, the sign up should fail and show an error message | 1 |
+| Sign up: Fail: password confirmation | Unit testing | username, email, password, password confirmation | Error message: password do not match | When the passwords inputted by the user does not match, the sign up should fail and show an error message | 1 |
+| Logout | Unit testing | username, email, password, password confirmation | Error message: password do not match | When the passwords inputted by the user does not match, the sign up should fail and show an error message | 1 |
 
 
 
