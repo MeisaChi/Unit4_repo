@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/logsign.css">
+    <title>Welcome to the best SNS</title>
+</head>
+<body>
+    <form method="post" class="container">
+        <h2>Sign up</h2>
+            <div>
+                <label for="">Email</label>
+                <input type="email" name="email">
+            </div>
+            <div>
+                <label for="">Username</label>
+                <input type="text" name="uname">
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input type="password" name="passwd">
+            </div>
+            <div>
+                <label for="">Confirm Password</label>
+                <input type="password" name="passwd2">
+            </div>
+            <div>
+                <input type="submit" name="" class="button" value="Sign up">
+                <a href="{{ url_for("login") }}" class="button">Cancel</a>
+            </div>
+
+    </form>
+{% if message %}
+<div class= "error"><p>Error: {{ message }}</p></div>
+{% endif %}
+</body>
+</html>
