@@ -1,7 +1,7 @@
 # Unit 4 project: Cafe sharing social network
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Screenshots/thumbnail.jpeg)
-*“パステルカラーの外観が可愛いカフェ / ワルシャワ / ポーランドの写真素材.” 旅パレット, 4 June 2019, https://decorate-my-trip.com/poland-warsaw-shabby-chic/. Accessed 13 April 2023.*
+**Fig.1** *“パステルカラーの外観が可愛いカフェ / ワルシャワ / ポーランドの写真素材.” 旅パレット, 4 June 2019, https://decorate-my-trip.com/poland-warsaw-shabby-chic/. Accessed 13 April 2023.*
 
 
 ## Criteria A: Planning
@@ -46,32 +46,32 @@ The advantage of using SQLite is that it is very simple and easy to use. SQLite 
 
 ## System Diagram
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/SystemDiagram.png)
-**Fig.1** *System diagram for the Cafe social media.*  
+**Fig.2** *System diagram for the Cafe social media.*  
 Shows the connection between the input, output and the program. The program gets an input from the user input on keyboard and the trackpad, which is transfered to the computer, then the Mac computer uses Python (includes Pycharm, CSS and HTML) to configurate the inputs. When the program runs, the GUI screen is shown on the computer screeen as an output.
 
 ## Wireframe Diagram
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/wireframe.jpg)
-**Fig.2** *Wireframe diagram for the Cafe social media.*  
+**Fig.3** *Wireframe diagram for the Cafe social media.*  
 Shows all the screens and the connections between the different screen, which is basically which button leads to which screen.
 
 ## ER Diagram
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/ER.jpg)
-**Fig.3** *ER diagram for the database in the Cafe social media*  
+**Fig.4** *ER diagram for the database in the Cafe social media*  
 The ER diagram shows the different tables 'users', 'posts' and 'bookmarks', as well as it's different properties within the database 'social_net.db', and it's connection to each other.
 
 ## UML Diagram
-![]()
-**Fig.4** *UML diagram for the OOP classes in the Cafe social media*
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/uml.jpg))
+**Fig.5** *UML diagram for the OOP classes used in the Cafe social media*
 
 ## Flow Diagrams
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/flow_in.jpg)
-**Fig.5** *Flow diagram for the Logging in function in the Cafe social media*
+**Fig.6** *Flow diagram for the Logging in function in the Cafe social media*
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/flow_out.jpg)
-**Fig.5** *Flow diagram for the Logging out function in the Cafe social media*
+**Fig.7** *Flow diagram for the Logging out function in the Cafe social media*
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/flow_post.jpg)
-**Fig.5** *Flow diagram for the posting function in the Cafe social media*
+**Fig.8** *Flow diagram for the posting function in the Cafe social media*
 
 
 ## Database Storage 
@@ -79,7 +79,7 @@ The data of the different user information and post information will be stored i
 ### Users 
 | id | uname | email | password |
 |-|-|-|-|
-| 1 (int. primary key) | Bob. (Str) | bob@xyz.com (Str) | $5$rounds=30000$... (str) |
+| 1 (int. primary key) | Bob. (Str) | bob@xyz.com (Str) | 5$rounds=30000... (str) |
 ### Posts 
 | id | title | content | price | location | user_id |
 |-|-|-|-|-|-|
@@ -94,11 +94,24 @@ The data of the different user information and post information will be stored i
 ## Test Plan
 | Description | Category | Input | Expected Output | Purpose | Success Criteria |
 |-|-|-|-|-|-|
+| Login: Successful | Category | Input | Expected Output | Purpose | Success Criteria |
+| Description | Category | Input | Expected Output | Purpose | Success Criteria |
+
 
 
 ## Record of Tasks
 | Task No | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
 |-|-|-|-|-|-|
+| 1 | Planning: Meet the client | Identify the client's problem and their requirements | 15mins | Apr 9 | A |
+| 1 |  |  |  |  |  |
+| 1 |  |  |  |  |  |
+| 1 |  |  |  |  |  |
+| 1 |  |  |  |  |  |
+| 1 |  |  |  |  |  |
+| 1 |  |  |  |  |  |
+| 1 |  |  |  |  |  |
+| 1 |  |  |  |  |  |
+
 | 1 | Find a thumbnail picture | A thumbnail picture that shows up at the top of my github documentation | 5mins | Apr 13 | A |
 | 2 | Write my problem definition | A problem definition on my github documentation | 20mins | Apr 13 | A |
 | 3 | Wite a justification for python | A justification for python on my github documentation | 5mins | Apr 19 | A |
