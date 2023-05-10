@@ -1,0 +1,28 @@
+{% extends "base_template.html" %}
+{% block content %}
+
+{% for p in posts %}
+    <div>
+    <tbody>
+        <h2 class="posttitle">{{ p[1] }}</h2>
+        <p><a href="{{ url_for("profile", user_id=p[5]) }}" class="clicktouser">{{ uname[p[0]] }}</a></p>
+        <p class="context">{{ p[2] }}</p>
+        <p class="price">{{ p[3] }}</p>
+        <p class="location">{{ p[4] }}</p>
+    </tbody>
+    <div class="button-container">
+    <form method="post">
+    <button class="bookmark" name="bookmark"><ion-icon name="bookmark-outline"></ion-icon></button>
+    <input type="hidden" name="post_name" value="{{ p[1] }}">
+    {% if cookie==p[5]  %}
+    <input type="submit" class="button" name="edit" value="Edit post">
+    {% endif  %}
+    </form>
+
+    </div>
+    </div>
+    <hr>
+
+{% endfor %}
+
+{% endblock %}
