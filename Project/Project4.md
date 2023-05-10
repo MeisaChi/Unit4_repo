@@ -662,15 +662,19 @@ This is the evaluation and feedbacks made by the another student
 ## Suggestions
 
 **Name the website**
+
 The first suggestion that I got for further development was to add a name and a logo to the social media. I never thought about adding a name to the website, but since it si a social media, it should have a name. As soon as I can come up with a name and a design of a logo, I can try implementing it into the website.
 
 **Design improvements**
+
 The second suggestion that I got was improving my css designs. This is: the bookmarks - being able to see if a post is already bookmarked or not by the color of the button, the sidebar - can have the redirector to the profile page on the side bar too, the colors - Can have more colors, not just white and brown. These suggestions are very helpful suggestions, because they are actual user interface suggestions, and cannot be done without others. Having different perspectives on the design can help improve the design, and working to implementing these suggestions will happen after there are other perspectived opinions.
 
 **Changing the password**
+
 Another suggestion that I got is that from the accont editing menu, the user should be able to edit their password, too. This is a very good idea, and in order to implement this, just like any other websites that includes logging in, the progra will have to be able to send an email to the owner of each user accounts. There has to be further research and development in order to make this happen.
 
 **Images**
+
 The last suggestion that I got was to have the user be able to add images to their posts. I thought this was also a very good and a reasonable suggestions, words tell less than visuals when it comes to cafe and food. There has to be a way to add photos to the posts database, and from the database to the website in order to implement the adding images function. 
 
 # Appendix
