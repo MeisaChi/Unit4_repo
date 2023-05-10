@@ -1,0 +1,47 @@
+{% extends "base_template.html" %}
+{% block content %}
+
+    {% if user %}
+    <title>{{ user[1] }}'s profile</title>
+    {% else %}
+    <title>User does not exist</title>
+    {% endif %}
+</head>
+    <div>
+    <body>
+{% if user %}
+    <h1>{{ user[1] }}'s profile</h1>
+    <p class="uname">email: {{ user[2] }}</p>
+    {% if AccCheck %}
+    <a href="{{ url_for("editacc") }}" class="button">Edit Account</a>
+    {% endif %}
+    {% if posts|length > 0 %}
+            <hr>
+    {% for p in posts %}
+    <tbody>
+        <h2 class="posttitle">{{ p[1] }}</h2>
+        <p class="context">{{ p[2] }}</p>
+        <p class="price">{{ p[3] }}</p>
+        <p class="location">{{ p[4] }}</p>
+    </tbody>
+  {% if AccCheck %}
+    <form method="post">
+    <input type="hidden" name="post_name" value="{{ p[1] }}">
+    <input type="submit" class="button" value="Edit post">
+    </form>
+    {% endif  %}
+
+            <hr>
+{% endfor %}
+{% else %}
+        <p>This user doesn't have any posts yet</p>
+{% endif %}
+
+    {% else %}
+    <h1>User does not exist</h1>
+    {% endif %}
+
+</body>
+</div>
+</html>
+{% endblock %}
