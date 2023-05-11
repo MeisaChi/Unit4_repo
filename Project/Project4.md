@@ -28,10 +28,16 @@ One of the reason I chose Python is because it is one of the fastest-growing lan
 The advantage of using SQLite is that it is very simple and easy to use. SQLite is easy to install and use, and it becomes a single file when saved[^2]. It is also accessible in different devices from home devices (phones) to professional devices (airplanes). SQLite does not need administration, and also does not need a server to run. This means it requires minimal support from the operating system or external library[^3]. This makes the website flexible and usable in any device, which is good for a social media, because it is pointed towards varied audiences. And in SQLite, a value can be stored in any value in any column, regardless of the data type[^3]. This becomes very important in our App, because we are creating different attributes that the user can input and they are in different values (strings and integers).
 
 ### Flask
+Flask is a Python module that helps develop web applications.[^4] Since the progrma we are designing is a social media platform, flask is perfect because the program may have many accounts and many posts and the website will should still run very light, and also this social media is a platform aimed for many different users, meaning that there must be a lot of developments. And although flask doesn't have many features, it can be easily developed[^4] and it is a microframework[^5], which means that it file sizes are small and the web runs very quickly. These meets the requirements.
 
-[^1]: “Top 10 Reasons Why Python is So Popular With Developers in 2023.” upGrad, 29 September 2022, https://www.upgrad.com/blog/reasons-why-python-popular-with-developers/. Accessed 1 March 2023.
-[^2]: “Appropriate Uses For SQLite.” SQLite, 16 December 2022, https://www.sqlite.org/whentouse.html. Accessed 1 March 2023.
-[^3]: “What is SQLite? Top SQLite Features You Should Know.” SQLite Tutorial, https://www.sqlitetutorial.net/what-is-sqlite/. Accessed 1 March 2023.
+It does have many cool features like url routing, template engine. It is a WSGI web app framework.
+
+[^1]: “Top 10 Reasons Why Python is So Popular With Developers in 2023.” upGrad, 29 September 2022, https://www.upgrad.com/blog/reasons-why-python-popular-with-developers/. Accessed 19 April 2023.
+[^2]: “Appropriate Uses For SQLite.” SQLite, 16 December 2022, https://www.sqlite.org/whentouse.html. Accessed 19 April 2023.
+[^3]: “What is SQLite? Top SQLite Features You Should Know.” SQLite Tutorial, https://www.sqlitetutorial.net/what-is-sqlite/. Accessed 19 April 2023.
+[^4]: “What is Flask Python.” Python Tutorial, https://pythonbasics.org/what-is-flask-python/. Accessed 19 April 2023.
+[^5]: DEERY, MATTHEW. “The Flask Web Framework: A Beginner's Guide.” CareerFoundry, 1 August 2022, https://careerfoundry.com/en/blog/web-development/what-is-flask/. Accessed 19 April 2023.
+
 
 
 ## Success criteria
@@ -151,6 +157,12 @@ The data of the different user information and post information will be stored i
 | 33 | Design: Screenshots | Take screenshots to put on Criterion C | 10mins | May 10 | C |
 | 34 | Development: existing tools | Update my existing tools in Criterion C | 5mins | May 9 | C |
 | 35 | Planning: Script | Create s script for the criterion D video | 30mins | May 10 | D |
+| 36 | Test: Video | Record my criterion D video | 30mins | May 11 | D |
+| 37 | Implement: Client interview and feedback | Interview my client for evaluation and get feebdack | 20mins | May 11 | E |
+| 38 | Implement: User interview and feedback | Interview a user for evaluation and get feebdack | 20mins | May 11 | E |
+| 39 | Development: Upload codes | Upload the python, css and html codes onto my repository | 5mins | May 11 | C |
+| 40 | Development: Upload screenshots | Upload screenshots from the app | 15mins | May 11 | C |
+
 
 
 # Criteria C: Development
@@ -322,7 +334,7 @@ This an extracted html code for the login screen, basically requests a method af
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/logsignbutton.png)
 
-**Fig.** *Buttons for login and sign up.*  
+**Fig.9** *Buttons for login and sign up.*  
 
 ```.py
 @app.route('/login',methods=['GET','POST'])
@@ -363,7 +375,7 @@ This html code is saying that if there is a message, in other words, if the mess
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/error1.png)
 
-**Fig.** *Example for when a user inputs a wrong email, the error message will show up like this.*  
+**Fig.10** *Example for when a user inputs a wrong email, the error message will show up like this.*  
 
 
 
@@ -410,7 +422,7 @@ The system for sign up is pretty similar to login. The dfferences are that:
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/tab_db.png)
 
-**Fig.** *Table of users in social_net.*  
+**Fig.11** *Table of users in social_net.*  
 
 
 ### Editing the account - SC.2
@@ -426,7 +438,7 @@ This html code allows the user to see their current username and email, with the
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/editacc.png)
 
-**Fig.** *Editting data page.*  
+**Fig.12** *Editting data page.*  
 
 ```.py
 @app.route('/users/editacc', methods=['GET', 'POST'])
@@ -470,7 +482,7 @@ When using the posting function, the content of the post might become slightly l
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/makepost.png)
 
-**Fig.** *Actual functionality of the use of textarea in html.*  
+**Fig.13** *Actual functionality of the use of textarea in html.*  
 
 ```.py
 @app.route('/post', methods=["GET", "POST"])
@@ -526,7 +538,7 @@ Here in the timeline html file, for every post, the different attributes for a p
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/timeline.png)
 
-**Fig.** *Posts with and without the edit post button.* 
+**Fig.14** *Posts with and without the edit post button.* 
 
 ### Bookmark function - SC.5
 Another one of the client's needs was to be able to save posts in bookmarks, delete posts from bookmarks.
@@ -558,12 +570,12 @@ This is the html for bookmarks page. If there is a post, it shows the post with 
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/bookmark.png)
 
-**Fig.** *A bookmark page with a bookmark.* 
+**Fig.15** *A bookmark page with a bookmark.* 
 
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/no_bookmark.png)
 
-**Fig.** *A bookmark page without a bookmark.* 
+**Fig.16** *A bookmark page without a bookmark.* 
 
 ```.py
 elif 'bookmark' in request.form:
@@ -620,7 +632,7 @@ The search function is made within the timeline, and so when a search request is
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/search.png)
 
-**Fig.** *Search bar.* 
+**Fig.17** *Search bar.* 
 
 ## Screen Shots from the website
 ![]()
