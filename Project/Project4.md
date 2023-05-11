@@ -654,8 +654,42 @@ The search function is made within the timeline, and so when a search request is
 **Fig.17** *Search bar.* 
 
 ## Screen Shots from the website
-![]()
-**Fig.**
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/ss_log.png)
+
+**Fig.18** *Screenshot of the login page*
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/ss_sign.png)
+
+**Fig.19** *Screenshot of the signup page*
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/ss_tl.png)
+
+**Fig.20** *Screenshot of the timeline page*
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/ss_po.png)
+
+**Fig.21** *Screenshot of the creating a post page*
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/ss_ed_po.png)
+
+**Fig.22** *Screenshot of the editing a post page*
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/ss_ot_pf.png)
+
+**Fig.23** *Screenshot of the a profile page of another user*
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/ss_self.png)
+
+**Fig.24** *Screenshot of the a profile page of the logged in user*
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/ss_ed_ac.png)
+
+**Fig.25** *Screenshot of the editing profile page*
+
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/ss_bm.png)
+
+**Fig.26** *Screenshot of the bookmarks page*
 
 
 # Criteria D: Functionality
@@ -712,14 +746,22 @@ The last suggestion that I got was to have the user be able to add images to the
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/cliint.png)
 
+**Fig.27** *Screenshot of notes from the client interview on problem*
+
 **Client interview on evaluation and feedback**
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/clifed.png)
+
+**Fig.28** *Screenshot of notes from the client evaluation and feedback*
 
 **User S interview on evaluation and feedback**
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/usefed.png)
 
+**Fig.29** *Screenshot of notes from the user evaluation and feedback*
+
 **Video Script**
 
 ![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/vidscr.jpg)
+
+**Fig.30** *Screenshot of notes for the script of the criterion D video*
