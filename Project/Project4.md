@@ -66,7 +66,7 @@ Shows all the screens and the connections between the different screen, which is
 The ER diagram shows the different tables 'users', 'posts' and 'bookmarks', as well as it's different properties within the database 'social_net.db', and it's connection to each other.
 
 ## UML Diagram
-![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/uml.jpg)
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/uml.png)
 **Fig.5** *UML diagram for the OOP classes used in the Cafe social media*
 
 ## Flow Diagrams
