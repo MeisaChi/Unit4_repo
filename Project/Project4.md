@@ -168,9 +168,28 @@ The data of the different user information and post information will be stored i
 # Criteria C: Development
 ## Existing tools
 Python
-CSS
-HTML
+
+SQLite
+
 Flask
+
+## List of techniques
+
+Flask library
+
+Flask routes
+
+If statements
+
+For loops
+
+Lists
+
+Password hashing
+
+Working with a databases
+
+Cookies
 
 ## Basic programs
 ### Imports
