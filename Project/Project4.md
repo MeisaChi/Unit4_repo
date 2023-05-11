@@ -622,14 +622,14 @@ The search function is made within the timeline, and so when a search request is
 
 **Fig.** *Search bar.* 
 
-## Screen Shots from the app
+## Screen Shots from the website
 ![]()
 **Fig.**
 
 
 # Criteria D: Functionality
 ## Video
-[CLICK HERE FOR THE VIDEO]()
+[CLICK HERE FOR THE VIDEO](https://youtu.be/YiyBuMKpjsg)
 
 # Criteria E: Evaluation
 
@@ -691,4 +691,4 @@ The last suggestion that I got was to have the user be able to add images to the
 
 **Video Script**
 
-![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/vidscr.png)
+![](https://github.com/MeisaChi/Unit4_repo/blob/main/Project/pics/vidscr.jpg)
